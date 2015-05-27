@@ -126,7 +126,7 @@ public class MysqlDatabaseHelperTest extends AbstractDatabaseHelperTest {
     @Override
     protected void assertLibraryConnectionMetadata(ConnectionMetadata connectionMetadata) {
         assertEquals("ad-livmu", connectionMetadata.getHostname());
-        assertEquals("33100", connectionMetadata.getPort());
+        assertEquals("3306", connectionMetadata.getPort());
         assertEquals("lib_dbo", connectionMetadata.getUser());
         assertEquals("lib_dbo", connectionMetadata.getPassword());
         assertEquals("lib", connectionMetadata.getCatalog());

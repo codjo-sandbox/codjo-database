@@ -1,15 +1,16 @@
 package net.codjo.database.mysql.api.query;
+import java.sql.SQLException;
 import net.codjo.database.api.DatabaseFactory;
 import net.codjo.database.api.Engine;
-import net.codjo.database.api.query.SelectQueryTestCase;
 import net.codjo.database.api.query.SelectQuery;
+import net.codjo.database.api.query.SelectQueryTestCase;
 import net.codjo.database.api.query.SelectResult;
 import net.codjo.database.common.api.ConnectionMetadata;
 import net.codjo.database.common.api.JdbcFixture;
 import net.codjo.database.mysql.impl.fixture.MysqlJdbcFixtureBuilder;
-import static net.codjo.test.common.matcher.JUnitMatchers.*;
-import java.sql.SQLException;
 import org.junit.Test;
+
+import static net.codjo.test.common.matcher.JUnitMatchers.*;
 
 public class MysqlSelectQueryTest extends SelectQueryTestCase {
 
@@ -40,7 +41,7 @@ public class MysqlSelectQueryTest extends SelectQueryTestCase {
     static JdbcFixture createMysqlFixture() throws ClassNotFoundException, SQLException {
         ConnectionMetadata connectionMetadata = createMeta("com.mysql.jdbc.Driver",
                                                            "ad-livmu",
-                                                           "33100",
+                                                           "3306",
                                                            "lib_dbo",
                                                            "lib_dbo",
                                                            "lib");
