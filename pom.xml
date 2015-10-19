@@ -137,14 +137,14 @@
         <module>codjo-database-common</module>
         <module>codjo-database-sybase</module>
         <module>codjo-database-oracle</module>
-        <module>codjo-database-mysql</module>
+        <!--<module>codjo-database-mysql</module>-->
         <module>codjo-database-hsqldb</module>
         <!--
            Next generation
         -->
         <module>codjo-database-api</module>
         <module>codjo-database-hsqldb-api</module>
-        <module>codjo-database-mysql-api</module>
+        <!--<module>codjo-database-mysql-api</module>-->
         <module>codjo-database-oracle-api</module>
         <module>codjo-database-sybase-api</module>
     </modules>
