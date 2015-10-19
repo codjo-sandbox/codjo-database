@@ -1,29 +1,19 @@
-package net.codjo.database.common.impl.query.runner;
+package net.codjo.database.api.query;
+
 import java.io.InputStream;
 import java.io.Reader;
 import java.math.BigDecimal;
 import java.net.URL;
-import java.sql.Array;
-import java.sql.Blob;
-import java.sql.Clob;
-import java.sql.Date;
-import java.sql.Ref;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.SQLWarning;
-import java.sql.Statement;
-import java.sql.Time;
-import java.sql.Timestamp;
+import java.sql.*;
 import java.util.Calendar;
 import java.util.Map;
-/**
- *
- */
-@SuppressWarnings({"OverlyComplexClass"})
-public class ResultSetDelegate implements ResultSet {
-    private ResultSet delegate;
 
+@SuppressWarnings({"OverlyComplexClass"})
+abstract class AbstractResultSetDelegate implements ResultSet {
+    ResultSet delegate;
+
+    AbstractResultSetDelegate() {
+    }
 
     protected void setDelegate(ResultSet delegate) {
         this.delegate = delegate;
