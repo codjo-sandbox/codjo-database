@@ -9,11 +9,11 @@
     <parent>
         <groupId>net.codjo.pom</groupId>
         <artifactId>codjo-pom-library</artifactId>
-        <version>3.0-RC4</version>
+        <version>3.0-RC6</version>
     </parent>
     <groupId>net.codjo.database</groupId>
     <artifactId>codjo-database</artifactId>
-    <version>3.0-RC2</version>
+    <version>3.0-RC3</version>
     <dependencyManagement>
         <dependencies>
             <dependency>
